@@ -8,7 +8,7 @@ Getting a token:
 http://www.asp.net/web-api/overview/security/individual-accounts-in-web-api
 
 Securing your ServiceStack service:
-
+'''C#
 [AuthenticateWithOAuthBearer(ApplyTo.All)]
 
 public class Hello : IReturn<HelloResponse>
@@ -20,7 +20,7 @@ public class Hello : IReturn<HelloResponse>
 	{
 		public string Result { get; set; }
 	}
-
+'''
 
 *Before adding this to your service, add custom validation logic to: OAuthTokenManager.IsAuthenticationTicketValid
 
