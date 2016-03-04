@@ -8,7 +8,7 @@ Getting a token:
 http://www.asp.net/web-api/overview/security/individual-accounts-in-web-api
 
 Securing your ServiceStack service:
-'''C#
+'''
 [AuthenticateWithOAuthBearer(ApplyTo.All)]
 
 public class Hello : IReturn<HelloResponse>
