@@ -10,10 +10,12 @@ http://www.asp.net/web-api/overview/security/individual-accounts-in-web-api
 Securing your ServiceStack service:
 
 [AuthenticateWithOAuthBearer(ApplyTo.All)]
+
 public class Hello : IReturn<HelloResponse>
 	{
 		public string Name { get; set; }  
     	}
+    	
 	public class HelloResponse
 	{
 		public string Result { get; set; }
