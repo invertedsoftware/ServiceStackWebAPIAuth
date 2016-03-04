@@ -1,0 +1,5 @@
+c:\users\gratner\documents\visual studio 2015\Projects\ServiceStackWebAPIAuth\ServiceStackWebAPIAuth.Utils\obj\Debug\ServiceStackWebAPIAuth.Utils.csprojResolveAssemblyReference.cache
+c:\users\gratner\documents\visual studio 2015\Projects\ServiceStackWebAPIAuth\ServiceStackWebAPIAuth.Utils\bin\Debug\ServiceStackWebAPIAuth.Utils.dll
+c:\users\gratner\documents\visual studio 2015\Projects\ServiceStackWebAPIAuth\ServiceStackWebAPIAuth.Utils\bin\Debug\ServiceStackWebAPIAuth.Utils.pdb
+c:\users\gratner\documents\visual studio 2015\Projects\ServiceStackWebAPIAuth\ServiceStackWebAPIAuth.Utils\obj\Debug\ServiceStackWebAPIAuth.Utils.dll
+c:\users\gratner\documents\visual studio 2015\Projects\ServiceStackWebAPIAuth\ServiceStackWebAPIAuth.Utils\obj\Debug\ServiceStackWebAPIAuth.Utils.pdb

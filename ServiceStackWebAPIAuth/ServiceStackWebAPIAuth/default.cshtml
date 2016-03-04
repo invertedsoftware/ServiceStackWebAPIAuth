@@ -1,0 +1,50 @@
+﻿@inherits ViewPage
+@{
+    ViewBag.Title = "Hello World Service";
+}
+<div>
+    <div>
+        <input class="form-control input-lg" id="Name" type="text" placeholder="Type your name">
+        <p id="helloResult" style="margin-top: 15px;font-size: large"></p>
+    </div>
+</div>
+<script>
+    function SendData() {
+        var name = $('#Name').val();
+
+        $.ajax({
+            type: 'GET',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer  ' + getParameterByName('token'));
+            },
+            url: '/hello/' + name + '/?format=json'
+        }).done(function (response) {
+            $('#helloResult').html(response.Result);
+        }).fail(function () {
+            alert("error");
+        });
+    }
+
+
+    $('#Name').keyup(function () {
+
+        // If you set [AuthenticateWithOAuthBearer(ApplyTo.All)]
+        // In your Hello POCO class, add an Authorization Bearer token you received from a Web API authentication service located
+        // on a machine with the same machine config key and use SendData() to communicate with the service.
+        // Read more on how to get a token here: http://www.asp.net/web-api/overview/security/individual-accounts-in-web-api
+
+        //SendData();
+
+        // If you dont have any authentication defined in your hello class, use the code below.
+        var name = $('#Name').val();
+        if (name) {
+            $.getJSON('/hello/' + name)
+                .success(function (response) {
+                    $('#helloResult').html(response.Result);
+                });
+        } else {
+            $('#helloResult').html('');
+        }
+    });
+</script>
+
